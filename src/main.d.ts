@@ -1,7 +1,7 @@
 import EmployeeQuery from './components/EmployeeQuery.vue';
 import { type App } from 'vue';
-export { EmployeeQuery };
-declare const _default: {
+declare const plugin: {
     install(app: App): void;
 };
-export default _default;
+export { EmployeeQuery };
+export default plugin;
