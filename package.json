@@ -1,6 +1,6 @@
 {
   "name": "zhuo-ts-vue",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "scripts": {
     "start": "webpack-dev-server --mode=development --config ./build/webpack.dev.config.cjs",
@@ -45,6 +45,5 @@
   "peerDependencies": {
     "vue": "^3.5.27"
   },
-  "./package.json": "./package.json",
-  "types": "./dist/EmployeeQuery.d.ts" 
+  "./package.json": "./package.json"
 }
