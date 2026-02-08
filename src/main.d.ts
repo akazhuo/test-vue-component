@@ -5,4 +5,3 @@ declare const _default: {
     install(app: App): void;
 };
 export default _default;
-//# sourceMappingURL=main.d.ts.map

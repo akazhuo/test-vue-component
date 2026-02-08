@@ -5,8 +5,9 @@
   "scripts": {
     "start": "webpack-dev-server --mode=development --config ./build/webpack.dev.config.cjs",
     "build": "webpack --mode=production --config ./build/webpack.prod.config.cjs",
-    "build-esm": "webpack --mode=production --env format=esm --config ./build/webpack.prod.config.cjs",
-    "build-cjs": "webpack --mode=production --env format=cjs --config ./build/webpack.prod.config.cjs"
+    "build:esm": "webpack --mode=production --env format=esm --config ./build/webpack.prod.config.cjs",
+    "build:cjs": "webpack --mode=production --env format=cjs --config ./build/webpack.prod.config.cjs",
+    "build:types": "vue-tsc --declaration --emitDeclarationOnly"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,7 @@
     ".": {
       "import": "./dist/EmployeeQuery.esm.js",
       "require": "./dist/EmployeeQuery.cjs.js",
-      "types": "./dist/EmployeeQuery.d.ts" 
+      "types": "./dist/EmployeeQuery.vue.d.ts"
     }
   },
   "description": "",
@@ -31,6 +32,7 @@
     "vue-loader": "^17.4.2",
     "vue-style-loader": "^4.1.3",
     "vue-template-compiler": "^2.7.16",
+    "vue-tsc": "^3.2.4",
     "webpack": "^5.104.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.3",
